@@ -24,12 +24,18 @@ public class WubbleDaycare{
       numbOfWubbles = 50;
       WubbleCloseTime = "4:30 pm";
       beenFed = true; 
-   }
+      }
+      
+      public WubbleDaycare (String name, int numbOfWubbles){
+      this.name = name;
+      this.numbOfWubbles = numbOfWubbles;
+      }
+   
    //method
    public int WubbleDropOff(int amountDropOff) {
       numbOfWubbles++;
       System.out.println(name + "has recieved anouther Wubble! The daycare now has" + numbOfWubbles + "wubbles!");
-      // OWNING MORE THAN ONE WUBBLE IS ILLEGAL, WHICH IS WHY OUR METHOD DOES NOT ACCOUNT FOR THIS. PROTECT THE WUBBLES FROM EXTCINTION PLEASE!!!!
+     //PROTECT THE WUBBLES FROM EXTCINTION PLEASE!!!!
       return numbOfWubbles;
       }
       public void FeedWubbles() {
